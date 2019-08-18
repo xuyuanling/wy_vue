@@ -537,13 +537,377 @@
         <span>更多</span>
         <i class="iconfont icon-jiantou"></i>
       </div>
+      <div class="wrapper">
+        <ul class="content">
+          <li class="contentItem" >
+            <div class="contentImg">
+              <a href="javascript:">
+                <img src="/static/images/ad1.png" >
+              </a>
+            </div>
+            <div class="title">直男们有救了！严选手把手教你, 送给女生的七夕怎么挑~</div>
+            <div class="desc">女士精选礼物大赏</div>
+          </li>
+          <li class="contentItem" >
+            <div class="contentImg">
+              <a href="javascript:">
+                <img src="/static/images/ad2.png" >
+              </a>
+            </div>
+            <div class="title">直男们有救了！严选手把手教你, 送给女生的七夕怎么挑~</div>
+            <div class="desc">女士精选礼物大赏</div>
+          </li>
+          <li class="contentItem" >
+            <div class="contentImg">
+              <a href="javascript:">
+                <img src="/static/images/ad3.png" >
+              </a>
+            </div>
+            <div class="title">直男们有救了！严选手把手教你, 送给女生的七夕怎么挑~</div>
+            <div class="desc">女士精选礼物大赏</div>
+          </li>
+        </ul>
+      </div>
     </div>
+    <!--众筹-->
+    <div class="crowd">
+      <div class="crowdtext">
+        <span>众筹</span>
+        <span>更多</span>
+        <i class="iconfont icon-jiantou"></i>
+      </div>
+      <div class="crowdProducts">
+        <div class="crowd-product">
+          <div class="crowdImg">
+            <img src="/static/images/bracelet.png" >
+          </div>
+          <div class="crowdItem">
+            <div class="title">来自地心的礼物</div>
+            <div class="price">￥899起</div>
+            <p class="box"></p>
+            <p class="desc">6人已支持</p>
+          </div>
+        </div>
+        <div class="crowd-product">
+          <div class="crowdImg">
+            <img src="/static/images/teapot.png" >
+          </div>
+          <div class="crowdItem">
+            <div class="title">来自地心的礼物</div>
+            <div class="price">￥899起</div>
+            <p class="box"></p>
+            <p class="desc">6人已支持</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--美食广告-->
+    <div class="food-ad">
+      <a href="javascript:">
+        <img src="/static/images/meishi.png" >
+      </a>
+    </div>
+    <div class="lists">
+      <ul class="proList ">
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+      </ul>
+    </div>
+    <!--日用品-->
+    <div class="food-ad">
+      <a href="javascript:">
+        <img src="/static/images/commodity.png" >
+      </a>
+    </div>
+    <div class="lists">
+      <ul class="proList ">
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/yashua.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">抄底特惠</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+      </ul>
+    </div>
+    <!--厨房-->
+    <div class="food-ad">
+      <a href="javascript:">
+        <img src="/static/images/kitchen.png  " >
+      </a>
+    </div>
+    <div class="lists">
+      <ul class="proList ">
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/watercup.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">特价</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+      </ul>
+    </div>
+    <!--清凉游泳-->
+    <div class="food-ad">
+      <a href="javascript:">
+        <img src="/static/images/swim.png " >
+      </a>
+    </div>
+    <div class="lists">
+      <ul class="proList ">
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/row.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+      </ul>
+    </div>
+    <!--SPA-->
+    <div class="food-ad">
+      <a href="javascript:">
+        <img src="/static/images/spa.png " >
+      </a>
+    </div>
+    <div class="lists">
+      <ul class="proList ">
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/laundry.png  " >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+        <li class="listItem">
+          <div class="ItemImg">
+            <img src="/static/images/mike.png" >
+          </div>
+          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
+          <p class="price">￥219</p>
+          <span class="discount">2件8.5折</span>
+        </li>
+      </ul>
+    </div>
+
+    <footer class="footer">
+      <div class="bt-footer">
+        <a href="javascript:">下载APP</a>
+        <a href="javascript:">电脑版</a>
+      </div>
+      <p class="copy">网易公司版权所有 © 1997-2019</p>
+      <p class="copy">食品经营许可证：JY13301080111719</p>
+    </footer>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   import Swiper from 'swiper'
+  import BScroll from 'better-scroll'
+
   export default {
+
     mounted () {
       new Swiper ('.swiper-container', {
         loop: true, // 循环模式选项
@@ -552,6 +916,16 @@
         pagination: {
           el: '.swiper-pagination',
         }
+      })
+      let wrapper = document.querySelector('.wrapper')
+      let scroll = new BScroll('.wrapper',{
+        scrollX: true,
+        click: true
+      })
+      let lists = document.querySelector('.lists')
+      let scrollPro = new BScroll('.lists',{
+        scrollX: true,
+        click: true
       })
     }
   }
@@ -1016,4 +1390,136 @@
        span:nth-child(1)
          display inline-block
          width 82%
+     .wrapper
+        margin-top 10px
+        overflow hidden
+        .content
+          display flex
+          float left
+          .contentItem
+            width 210px
+            //height 150px
+            margin-right 45px
+            .contentImg
+              width 240px
+              height 150px
+              img
+                width 100%
+
+            .title
+              padding-left 5px
+              font-size 16px
+              overflow hidden
+              text-overflow ellipsis
+              white-space nowrap
+              margin-bottom 5px
+            .desc
+              padding-left 5px
+              font-size 12px
+              color #7f7f7f
+
+   .crowd
+     background white
+     margin-top 10px
+     .crowdtext
+       width 100%
+       padding 10px
+       span:nth-child(1)
+         display inline-block
+         width 82%
+     .crowdProducts
+       border-top 1px solid #d8d8d8
+       padding 10px
+       .crowd-product
+         margin-top 10px
+         display flex
+         .crowdImg
+           width 100px
+           height 100px
+           background #f4f4f4
+           img
+             width 100px
+         .crowdItem
+           margin-left 15px
+           padding-top 10px
+           width 200px
+
+           .desc
+             font-size 12px
+             color #7f7f7f
+           .title
+             font-size 14px
+             margin-bottom 10px
+             color #333
+           .box
+             width 200px
+             height 3px
+             background #D8D8D8
+             margin-bottom 10px
+           .price
+             color #B4282D
+             font-size 16px
+             margin-bottom 10px
+   .food-ad
+    width 100%
+    margin-top 10px
+    img
+      width 100%
+
+   .lists
+     background white
+     overflow hidden
+     .proList
+       display flex
+       margin-top 10px
+       padding-top 10px
+       float left
+       .listItem
+         margin-bottom 10px
+         //width 150px
+         font-size 14px
+         margin-left 10px
+         .ItemImg
+           margin-bottom 10px
+           width 100px
+           img
+             width 100%
+             background #f4f4f4
+         .product
+           font-size 12px
+           line-height 20px
+         .price
+           font-size 12px
+           color #b4282d
+           margin-bottom 5px
+         .discount
+          border 1px solid #CE2424
+          border-radius 10px
+          padding 0 5px
+          color #CE2424
+          font-size 12px
+          text-align center
+   .footer
+    margin-top 10px
+    padding 10px
+    background #414141
+    text-align center
+    .bt-footer
+      padding 10px
+      margin-bottom 10px
+      a
+        display inline-block
+        border 1px solid #999
+        border-radius 5px
+        color white
+        font-size 12px
+        width 80px
+        height 30px
+        line-height 30px
+        margin-right 15px
+
+    .copy
+      color: #999
+      font-size 12px
+      margin-bottom 5px
 </style>
