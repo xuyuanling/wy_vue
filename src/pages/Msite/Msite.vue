@@ -252,39 +252,292 @@
       </div>
 
     </div>
-    <div>
-      <div class="customizetext">
+    <!--限时购-->
+    <div class="Limited">
+      <div class="Limitedtext">
         <span>限时购</span>
-        <div>
-          <span></span>：
-          <span></span>：
+        <div class="count">
+          <span class="hour">10</span>
+          <span class="colon">:</span>
+          <span class="hour">25</span>
+          <span class="colon">:</span>
+          <span class="hour">25</span>
         </div>
+        <span>更多</span>
+        <i class="iconfont icon-jiantou"></i>
       </div>
-      <ul class="customizeList">
-        <li class="customizeItem">
+      <ul class="LimitedList">
+        <li class="LimitedItem">
           <div class="ItemImg">
             <img src="/static/images/yashua.png" >
           </div>
-          <span class="product">全净皓齿变速式声波电动牙刷</span>
-          <span class="product-name">￥21.9</span>
+          <span class="price">￥179</span>
+          <del class="oldPrice">￥219</del>
         </li>
-        <li class="customizeItem">
+        <li class="LimitedItem">
           <div class="ItemImg">
-            <img src="/static/images/zhiku.png" >
+            <img src="/static/images/yashua.png" >
           </div>
-          <span class="product">全净皓齿变速式声波电动牙刷</span>
-          <span class="product-name">￥21.9</span>
+          <span class="price">￥179</span>
+          <del class="oldPrice">￥219</del>
         </li>
-        <li class="customizeItem">
+        <li class="LimitedItem">
           <div class="ItemImg">
-            <img src="/static/images/paper.png" >
+            <img src="/static/images/yashua.png" >
           </div>
-          <span class="product">全净皓齿变速式声波电动牙刷</span>
-          <span class="product-name">￥21.9</span>
+          <span class="price">￥179</span>
+          <del class="oldPrice">￥219</del>
+        </li>
+        <li class="LimitedItem">
+          <div class="ItemImg">
+            <img src="/static/images/yashua.png" >
+          </div>
+          <span class="price">￥179</span>
+          <del class="oldPrice">￥219</del>
+        </li>
+        <li class="LimitedItem">
+          <div class="ItemImg">
+            <img src="/static/images/yashua.png" >
+          </div>
+          <span class="price">￥179</span>
+          <del class="oldPrice">￥219</del>
+        </li>
+        <li class="LimitedItem">
+          <div class="ItemImg">
+            <img src="/static/images/yashua.png" >
+          </div>
+          <span class="price">￥179</span>
+          <del class="oldPrice">￥219</del>
         </li>
       </ul>
     </div>
-
+    <!--新品首发-->
+    <div class="new-products">
+      <div class="newProducttext">
+        <span>新品首发</span>
+        <span>更多</span>
+        <i class="iconfont icon-jiantou"></i>
+      </div>
+      <ul class="newProductList">
+        <li class="newProductItem">
+          <div class="ItemImg">
+            <img src="/static/images/food.png" >
+          </div>
+          <span class="product">英国设计 车载杀菌除味无线...</span>
+          <span class="price">￥219</span>
+        </li>
+        <li class="newProductItem">
+          <div class="ItemImg">
+            <img src="/static/images/bw.png" >
+          </div>
+          <span class="product">英国设计 车载杀菌除味无线...</span>
+          <span class="price">￥219</span>
+        </li>
+        <li class="newProductItem">
+          <div class="ItemImg">
+            <img src="/static/images/shoes.png" >
+          </div>
+          <span class="product">英国设计 车载杀菌除味无线...</span>
+          <span class="price">￥219</span>
+        </li>
+        <li class="newProductItem">
+          <div class="ItemImg">
+            <img src="/static/images/shoes.png" >
+          </div>
+          <span class="product">英国设计 车载杀菌除味无线...</span>
+          <span class="price">￥219</span>
+        </li>
+        <li class="newProductItem">
+          <div class="ItemImg">
+            <img src="/static/images/food.png" >
+          </div>
+          <span class="product">英国设计 车载杀菌除味无线...</span>
+          <span class="price">￥219</span>
+        </li>
+        <li class="newProductItem">
+          <div class="ItemImg">
+            <img src="/static/images/shoes.png" >
+          </div>
+          <span class="product">英国设计 车载杀菌除味无线...</span>
+          <span class="price">￥219</span>
+        </li>
+      </ul>
+    </div>
+    <!--人气推荐-->
+    <div class="popular">
+      <div class="populartext">
+        <span>人气推荐</span>
+        <span>更多</span>
+        <i class="iconfont icon-jiantou"></i>
+      </div>
+      <div class="p-product">
+        <div class="productImg">
+          <img src="/static/images/zhentou.png" >
+        </div>
+        <div class="productItem">
+          <div class="sale">抄底特惠</div>
+          <div class="title">新色 奢华植鞣头层水牛皮席 凉席三件套</div>
+          <p class="desc">三峡水牛头层皮，高端夏凉必备</p>
+          <p class="price">￥1949</p>
+        </div>
+      </div>
+      <ul class="popularList">
+        <li class="popularItem">
+          <div class="ItemImg">
+            <img src="/static/images/food.png" >
+          </div>
+          <span class="product">英国设计 车载杀菌除味无线...</span>
+          <span class="price">￥219</span>
+        </li>
+        <li class="popularItem">
+          <div class="ItemImg">
+            <img src="/static/images/bw.png" >
+          </div>
+          <span class="product">英国设计 车载杀菌除味无线...</span>
+          <span class="price">￥219</span>
+        </li>
+        <li class="popularItem">
+          <div class="ItemImg">
+            <img src="/static/images/shoes.png" >
+          </div>
+          <span class="product">英国设计 车载杀菌除味无线...</span>
+          <span class="price">￥219</span>
+        </li>
+      </ul>
+    </div>
+    <!--类目热销榜-->
+    <div class="hot-lists">
+      <div class="hot-text">类目热销榜</div>
+      <div class="hot-list">
+        <div class="hot-list-Item">
+          <div class="hot-list-text">
+            <span>热销榜</span>
+            <span class="border"></span>
+          </div>
+          <div class="hotImg" ><img src="/static/images/inshoe.png" alt=""></div>
+        </div>
+        <div class="praise-list-Item">
+          <div class="hot-list-text">
+            <span>好评榜</span>
+            <span class="border"></span>
+          </div>
+          <div class="hotImg" ><img src="/static/images/camera.png" alt=""></div>
+        </div>
+      </div>
+      <ul class="hot-products">
+        <li class="hot-product-item">
+          <span>居家生活榜</span>
+          <img src="/static/images/mike.png" alt="">
+        </li>
+        <li class="hot-product-item">
+          <span>居家生活榜</span>
+          <img src="/static/images/yashua.png" alt="">
+        </li>
+        <li class="hot-product-item">
+          <span>居家生活榜</span>
+          <img src="/static/images/mike.png" alt="">
+        </li>
+        <li class="hot-product-item">
+          <span>居家生活榜</span>
+          <img src="/static/images/yashua.png" alt="">
+        </li>
+        <li class="hot-product-item">
+          <span>居家生活榜</span>
+          <img src="/static/images/mike.png" alt="">
+        </li>
+        <li class="hot-product-item">
+          <span>居家生活榜</span>
+          <img src="/static/images/yashua.png" alt="">
+        </li>
+        <li class="hot-product-item">
+          <span>居家生活榜</span>
+          <img src="/static/images/mike.png" alt="">
+        </li>
+        <li class="hot-product-item">
+          <span>居家生活榜</span>
+          <img src="/static/images/yashua.png" alt="">
+        </li>
+      </ul>
+    </div>
+    <!--福利社-->
+    <div class="activityContainer">
+      <ul class="activityList" >
+        <li class="activityItem">
+          <div class="activityInfo">
+            <p>福利社</p>
+            <p>抢超值神券</p>
+            <p>享今日特价</p>
+          </div>
+          <div class="activityImg">
+            <img src="/static/images/foods.png" >
+          </div>
+        </li>
+        <li class="activityItem">
+          <div class="activityInfo">
+            <p>福利社</p>
+            <p>抢超值神券</p>
+            <p>享今日特价</p>
+          </div>
+          <div class="activityImg">
+            <img src="/static/images/foods.png" >
+          </div>
+        </li>
+        <li class="activityItem">
+          <div class="activityInfo">
+            <p>福利社</p>
+            <p>抢超值神券</p>
+            <p>享今日特价</p>
+          </div>
+          <div class="activityImg">
+            <img src="/static/images/foods.png" >
+          </div>
+        </li>
+        <li class="activityItem">
+          <div class="activityInfo">
+            <p>福利社</p>
+            <p>抢超值神券</p>
+            <p>享今日特价</p>
+          </div>
+          <div class="activityImg">
+            <img src="/static/images/foods.png" >
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!--品牌制造商直供-->
+    <div class="BrandModule">
+      <div class="Brandtext">
+        <span>品牌制造商直供</span>
+        <span>更多</span>
+        <i class="iconfont icon-jiantou"></i>
+      </div>
+      <ul class="BrandLise">
+        <li class="BrandItem">
+          <p>海外制造商</p>
+          <p>9.9元起</p>
+        </li>
+        <li class="BrandItem">
+          <p>海外制造商</p>
+          <p>9.9元起</p>
+        </li>
+        <li class="BrandItem">
+          <p>海外制造商</p>
+          <p>9.9元起</p>
+        </li>
+        <li class="BrandItem">
+          <p>海外制造商</p>
+          <p>9.9元起</p>
+        </li>
+      </ul>
+    </div>
+    <!--专题精选-->
+    <div class="special">
+      <div class="specialtext">
+        <span>专题精选</span>
+        <span>更多</span>
+        <i class="iconfont icon-jiantou"></i>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -500,4 +753,267 @@
           width 5px
           height 5px
           background red
+    .Limited
+      background white
+      margin-top 10px
+      padding 10px
+      .Limitedtext
+        display flex
+        align-items center
+        .count
+          margin-left 10px
+          width 70%
+          .hour
+            display inline-block
+            width 16px
+            height 16px
+            background #333
+            color white
+            font-size 12px
+            text-align center
+      .LimitedList
+        display flex
+        flex-wrap wrap
+        margin-top 10px
+        .LimitedItem
+          margin-bottom 10px
+          width 30%
+          font-size 14px
+          margin-left 10px
+          .ItemImg
+            background #f5f5f5
+            margin-bottom 10px
+            img
+              width 100%
+          .price
+            color #b4282d
+            font-size 16px
+          .oldPrice
+            font-size 12px
+            color #7f7f7f
+
+    .new-products
+      background white
+      margin-top 10px
+      padding 10px
+      .newProducttext
+        width 100%
+        span:nth-child(1)
+          display inline-block
+          width 82%
+      .newProductList
+        display flex
+        flex-wrap wrap
+        margin-top 10px
+        .newProductItem
+          margin-bottom 10px
+          width 30%
+          font-size 14px
+          margin-left 10px
+          .ItemImg
+            background #f5f5f5
+            margin-bottom 10px
+            img
+              width 100%
+          .product
+            font-size 12px
+            line-height 20px
+          .price
+            font-size 12px
+            color red
+    .popular
+     background white
+     margin-top 10px
+     padding 10px
+     .populartext
+       width 100%
+       span:nth-child(1)
+         display inline-block
+         width 82%
+     .p-product
+       background #FEF0DF
+       display flex
+       margin-top 10px
+      .productImg
+        width 150px
+        height 150px
+        img
+          width 150px
+      .productItem
+        padding-top 20px
+        width 200px
+        .sale
+          display inline-block
+          padding 2px
+          font-size 10px
+          color #B4282D
+          background white
+          border 1px solid #B4282D
+          margin 10px 0
+        .title
+          font-size 14px
+          overflow hidden
+          text-overflow ellipsis
+          white-space nowrap
+          margin-bottom 10px
+        .desc
+          font-size 12px
+          color #666
+          margin-bottom 10px
+        .price
+          color #B4282D
+          font-size 14px
+      .popularList
+        display flex
+        flex-wrap wrap
+        margin-top 10px
+        .popularItem
+          margin-bottom 10px
+          width 30%
+          font-size 14px
+          margin-left 10px
+          .ItemImg
+            background #f5f5f5
+            margin-bottom 10px
+            img
+              width 100%
+          .product
+            font-size 12px
+            line-height 20px
+          .price
+            font-size 12px
+            color red
+    .hot-lists
+      background white
+      margin-top 10px
+      padding 10px
+      .hot-text
+        margin-bottom 10px
+      .hot-list
+        display flex
+        .hot-list-Item
+          display flex
+          background #F9F3E4
+          margin-right 10px
+          padding 10px
+          height 90px
+          .hotImg
+            width 100px
+            height 100px
+            img
+              width 100%
+          .hot-list-text
+            width 48px
+            padding-top 30px
+            font-size 14px
+            .border
+              display inline-block
+              width 20px
+              height 2px
+              background black
+        .praise-list-Item
+          display flex
+          background #EBEFF6
+          padding 10px
+          height 90px
+          .hotImg
+            width 100px
+            height 100px
+            img
+              width 100%
+          .hot-list-text
+            width 48px
+            padding-top 30px
+            font-size 14px
+            .border
+              display inline-block
+              width 20px
+              height 2px
+              background black
+      .hot-products
+        display flex
+        flex-wrap wrap
+        margin-top 5px
+        .hot-product-item
+          width 24%
+          text-align center
+          background #F5F5F5
+          margin-right 2px
+          margin-bottom 2px
+          span
+            font-size 12px
+            color #333
+          img
+            width 50px
+    .activityContainer
+      background white
+      margin-top 10px
+      padding 10px
+      .activityList
+        display flex
+        flex-wrap wrap
+        .activityItem
+          width 43%
+          display flex
+          margin-right 3px
+          margin-bottom 3px
+          padding 10px
+          background url(https://yanxuan.nosdn.127.net/dc4bbc16d3946fddb71382f8132210b9.png?imageView&thumbnail=343x220&quality=75)
+          p:nth-child(1)
+            color #333
+          p:nth-child(2)
+            font-size 12px
+            color #666
+            margin-top 5px
+          p:nth-child(3)
+            font-size 12px
+            color red
+            margin-top 5px
+          .activityImg
+            width 90px
+            img
+              width 100%
+
+
+   .BrandModule
+     background white
+     margin-top 10px
+     padding 10px
+     .Brandtext
+       width 100%
+       span:nth-child(1)
+         display inline-block
+         width 82%
+     .BrandLise
+       display flex
+       width 100%
+       flex-wrap wrap
+       padding 10px
+       background white
+       .BrandItem
+         width 40%
+         height 100px
+         padding 10px
+         background #f5f5f5
+         margin-right 3px
+         margin-bottom 3px
+         text-align center
+         background url(https://yanxuan.nosdn.127.net/74e2ea8f81004d0a60f90fc8e4649058.png?imageView&thumbnail=343y260&enlarge=1)
+         background-size 100% 100%
+         p:nth-child(1)
+           color #333
+         p:nth-child(2)
+           font-size 12px
+           color #666
+           margin-top 5px
+
+   .special
+     background white
+     margin-top 10px
+     padding 10px
+     .specialtext
+       width 100%
+       span:nth-child(1)
+         display inline-block
+         width 82%
 </style>
