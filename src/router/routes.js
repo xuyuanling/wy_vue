@@ -3,6 +3,7 @@ import Sort from '../pages/Sort/Sort.vue'
 import Goods from '../pages/Goods/Goods.vue'
 import ShopCart from '../pages/ShopCart/ShopCart.vue'
 import Personal from '../pages/Personal/Personal.vue'
+import Search from '../pages/Search/Search'
 
 export default[{
     path:'/msite',
@@ -35,6 +36,10 @@ export default[{
     path:'/personal',
     component:Personal
 },
+  {
+    path:'/search',
+    component:Search
+  },
 {
     path:'/',
     redirect:'/msite'
