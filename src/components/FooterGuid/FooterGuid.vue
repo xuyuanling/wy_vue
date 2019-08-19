@@ -8,7 +8,7 @@
     </a>
     <a class="footerItem":class="{on:$route.path==='/sort'}"  @click="goTo('/sort')">
         <span class="iconItem">
-            <i class="iconfont icon-iconyihuifu-"></i>
+            <i class="iconfont icon-chuangtougui"></i>
         </span>
         <span>分类</span>
     </a>

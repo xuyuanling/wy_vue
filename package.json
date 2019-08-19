@@ -16,6 +16,8 @@
   "dependencies": {
     "@better-scroll/core": "^2.0.0-alpha.20",
     "better-scroll": "^1.15.2",
+    "lib-flexible": "^0.3.2",
+    "px2rem-loader": "^0.1.9",
     "swiper": "^4.5.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"

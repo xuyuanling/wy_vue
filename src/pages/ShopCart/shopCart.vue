@@ -27,16 +27,18 @@
       </li>
     </ul>
     <div class="shopContent">
-      <div class="shopImg">
-        <img src="/static/images/shopcart.png" >
+      <div class="shopImg"></div>
+      <div class="text">
+        <div class="add">去添加点什么吧</div>
+        <div class="login">登录</div>
       </div>
-      <div>登录</div>
     </div>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   export default {
+
   }
 </script>
 
@@ -57,7 +59,7 @@
         .cash
           float right
           color #B4282D
-
+          font-size 16px
 
 
     .wy-shop
@@ -78,13 +80,43 @@
 
 
     .shopContent
+      position fixed
+      left 0
+      top 95px
+      right 0
+      bottom 20px
       background #f4f4f4
       text-align center
-      margin 100px auto
+      //margin 175px auto
       height 100%
       .shopImg
-        width 200px
+        position absolute
+        left 0
+        top 0
+        right 0
+        bottom 200px
+        margin auto
+        width 40px
+        height 140px
         padding-left  100px
-        img
-          width 100%
+        background url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/noCart-d6193bd6e4.png)
+        background-repeat no-repeat
+        background-size 100% 100%
+
+      .text
+        position absolute
+        left 80px
+        top 300px
+        .add
+          font-size 14px
+          color #999
+        .login
+          margin-top 20px
+          width 220px
+          height 40px
+          line-height 40px
+          text-align center
+          color white
+          font-size 16px
+          background #b4282d
 </style>

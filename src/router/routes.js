@@ -6,23 +6,36 @@ import Personal from '../pages/Personal/Personal.vue'
 
 export default[{
     path:'/msite',
-    component:Msite
+    component:Msite,
+    meta:{
+      showFooter:true
+    }
 },{
     path:'/sort',
-    component:Sort
+    component:Sort,
+    meta:{
+      showFooter:true
+    }
 },
 {
     path:'/goods',
-    component:Goods
+    component:Goods,
+    meta:{
+      showFooter:true
+    }
 },
 {
     path:'/shopcart',
-    component:ShopCart
+    component:ShopCart,
+    meta:{
+      showFooter:true
+    }
 },
 {
     path:'/personal',
     component:Personal
-},{
+},
+{
     path:'/',
     redirect:'/msite'
 }
