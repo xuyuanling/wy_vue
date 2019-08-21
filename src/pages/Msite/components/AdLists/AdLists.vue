@@ -1,75 +1,49 @@
 <template>
-  <div>
-    <!--美食广告-->
-    <div class="food-ad">
-      <a href="javascript:">
-        <img src="/static/images/meishi.png" >
-      </a>
+  <div >
+    <div v-for="(list, index) in getAdList" :key="index">
+      <!--美食广告-->
+      <div class="food-ad">
+        <a href="javascript:" >
+          <img :src="list.titlePicUrl" >
+        </a>
+      </div>
+      <div class="lists" ref="lists">
+        <ul class="proList ">
+          <li class="listItem"  v-for="(item, index) in list.itemList" :key="index">
+            <div class="ItemImg">
+              <img :src="item.listPicUrl" >
+            </div>
+            <span class="product">{{item.name}}</span>
+            <p class="price">￥{{item.counterPrice}}</p>
+            <span class="discount">2件8.5折</span>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="lists">
-      <ul class="proList ">
-        <li class="listItem">
-          <div class="ItemImg">
-            <img src="/static/images/mike.png" >
-          </div>
-          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
-          <p class="price">￥219</p>
-          <span class="discount">2件8.5折</span>
-        </li>
-        <li class="listItem">
-          <div class="ItemImg">
-            <img src="/static/images/mike.png" >
-          </div>
-          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
-          <p class="price">￥219</p>
-          <span class="discount">2件8.5折</span>
-        </li>
-        <li class="listItem">
-          <div class="ItemImg">
-            <img src="/static/images/mike.png" >
-          </div>
-          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
-          <p class="price">￥219</p>
-          <span class="discount">2件8.5折</span>
-        </li>
-        <li class="listItem">
-          <div class="ItemImg">
-            <img src="/static/images/mike.png" >
-          </div>
-          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
-          <p class="price">￥219</p>
-          <span class="discount">2件8.5折</span>
-        </li>
-        <li class="listItem">
-          <div class="ItemImg">
-            <img src="/static/images/mike.png" >
-          </div>
-          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
-          <p class="price">￥219</p>
-          <span class="discount">2件8.5折</span>
-        </li>
-        <li class="listItem">
-          <div class="ItemImg">
-            <img src="/static/images/mike.png" >
-          </div>
-          <span class="product">常温纯牛奶 250毫升*12盒*2提</span>
-          <p class="price">￥219</p>
-          <span class="discount">2件8.5折</span>
-        </li>
-      </ul>
-    </div>
+    
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   import BScroll from 'better-scroll'
+  import {mapGetters} from 'vuex'
   export default {
       mounted() {
-          let lists = document.querySelector('.lists')
-          let scrollPro = new BScroll('.lists',{
+          //let lists = document.querySelector('.lists')
+
+          let scrollPro = new BScroll(this.$refs.lists,{
             scrollX: true,
             click: true
         })
+      },
+      computed: {
+        ...mapGetters(['getAdLists']),
+        getAdList(){
+          if(this.getAdLists){
+            return this.getAdLists.slice(0,5)
+          }
+          
+        }
       },
   }
 </script>

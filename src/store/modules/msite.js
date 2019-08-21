@@ -44,6 +44,12 @@ const getters={
         if(state.homeDate.newItemList){
             return state.homeDate.newItemList
         }
+    },
+    //获取AdLists 数据
+    getAdLists(state){
+        if(state.homeDate.categoryModule){
+            return state.homeDate.categoryModule
+        }
     }
 
 }

@@ -6,7 +6,7 @@
         <a href="javascript:">
           <img class="logo"src="/static/images/logo.png" alt="logo">
         </a>
-        <div class="header_search">
+        <div class="header_search" @click="$router.push('/search')">
           <i class="iconfont icon-sousuo"></i>
           <span>搜索商品，共21615款好物</span>
         </div>
@@ -20,7 +20,7 @@
       </ul>
       
     </header>
-    <span class="iconfont icon-jiantou-copy-copy" @click='isShow=!isShow'></span>
+    <span class="iconfont icon-jiantou-copy-copy" :class="{on:isShow }"@click='isShow=!isShow'></span>
     <!--全部频道-->
     <div class="channelAll" v-show="isShow" >
       <div class="channel">全部频道</div>
@@ -106,11 +106,15 @@
       font-size 18px
       color #333
       z-index 999
+      transition all 0.5s
+      &.on
+        transform rotate(180deg)
+        transition all 0.5s
     .channelAll
-       
+        padding 10px
         background white
         position fixed
-        top 55px
+        top 50px
         z-index 12
         .channel
           color #666
@@ -132,6 +136,7 @@
             border-radius 2px
             &.active
               border 1px solid #b4282d
+              color #b4282d
 
 
 

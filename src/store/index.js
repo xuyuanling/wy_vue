@@ -6,6 +6,7 @@ import mutations from './mutations'
 import getters from './getters'
 import msite from './modules/msite'
 import category from './modules/category'
+import search from './modules/search'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -15,6 +16,7 @@ export default new Vuex.Store({
     getters,
     modules:{
         msite,
-        category
+        category,
+        search
     }
 })

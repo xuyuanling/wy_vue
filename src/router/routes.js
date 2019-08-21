@@ -4,6 +4,7 @@ import Goods from '../pages/Goods/Goods.vue'
 import ShopCart from '../pages/ShopCart/ShopCart.vue'
 import Personal from '../pages/Personal/Personal.vue'
 import Search from '../pages/Search/Search'
+import Category from '../pages/Category/Category.vue'
 
 export default[{
     path:'/msite',
@@ -16,7 +17,13 @@ export default[{
     component:Sort,
     meta:{
       showFooter:true
-    }
+    },
+    children:[
+      {
+        path:'/sort/category',
+        component:Category
+      }
+    ]
 },
 {
     path:'/goods',

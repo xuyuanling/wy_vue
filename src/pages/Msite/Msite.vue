@@ -42,10 +42,7 @@
     <Special/>
     <Crowd/>
     <AdLists/>
-    <AdLists/>
-    <AdLists/>
-    <AdLists/>
-    <AdLists/>
+    
 
     <footer class="footer">
       <div class="bt-footer">

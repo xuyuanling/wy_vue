@@ -1,35 +1,59 @@
 <template>
     <div class="searchContainer">
       <div class="header">
-        <div class="header_search">
+        <div class="header_search" v-if="keywordsInit.defaultKeyword">
+          <input type="text" :placeholder="keywordsInit.defaultKeyword.keyword" v-model="keyWord" @keyup='getKeyWord'>
           <i class="iconfont icon-sousuo"></i>
-          <span>硅藻土浴室地垫 直降29元</span>
         </div>
-        <span class="cancel" @click="$router.replace('/personal')">取消</span>
+        <span class="cancel" @click="$router.back()">取消</span>
       </div>
+      <ul class="searchBox" v-if="result">
+        <li class="searchItem" v-for="(item, index) in result.data" :key="index">{{item}}</li>
+      </ul>
       <div class="searchContion">
         <div class="hot-search">热门搜索</div>
-        <ul class="searchList">
-          <li class="searchItem active">爆款 行李箱</li>
-          <li class="searchItem">香氛牙膏 谈吐芳香</li>
-          <li class="searchItem">轻弹云朵拖鞋9.9元</li>
-          <li class="searchItem">中秋月饼 上新热卖</li>
-          <li class="searchItem">百搭帆布鞋89元起</li>
-          <li class="searchItem">行李箱</li>
-          <li class="searchItem">开胃面皮 仅5元</li>
-          <li class="searchItem">锅</li>
-          <li class="searchItem">床垫</li>
-          <li class="searchItem">耳机</li>
-          <li class="searchItem">电动牙刷</li>
-          <li class="searchItem">咖啡</li>
+        <ul class="searchList" v-if="keywordsInit">
+          <li class="searchItem " :class='{active:keyword.highlight}' v-for="(keyword, index) in keywordsInit.hotKeywordVOList" :key="index">{{keyword.keyword}}</li>
+          
         </ul>
       </div>
     </div>
 </template>
 
 <script>
+  import {reqkeywords} from '../../api'
+  import {mapState} from 'vuex'
   export default {
-    name: 'Search'
+    data() {
+      return {
+        keyWord:'',
+        result:{}
+      }
+    },
+     mounted() {
+      this.$store.dispatch('getkeywordsInit')
+       console.log(this)
+    },
+    computed: {
+      ...mapState({
+        keywordsInit:state=>state.search.keywordsInit
+      })
+    },
+
+    methods: {
+      async getKeyWord(){
+        const {keyWord} = this
+        const response = await reqkeywords(keyWord)
+        
+        let result =response.data
+        console.log(result)
+        if(result.code==='200'){
+          console.log(result)
+          this.result=result
+       }
+      }
+    },
+ 
   }
 </script>
 
@@ -42,14 +66,29 @@
       align-items center
       font-size 14px
       .header_search
+        position relative
         background #f4f4f4
         width 80%
         height 30px
         line-height 30px
         margin-right 15px
-        padding 0 10px
+        padding  0 10px
         font-size 14px
         color #666
+        input
+          width 100%
+          background #f4f4f4
+          padding-left 25px
+          outline none
+        .icon-sousuo
+          position absolute
+          left 10px
+          top 0
+    .searchBox
+      padding 10px
+      .searchItem
+        padding 10px
+        border-bottom 1px solid #eee
     .searchContion
       margin-top 20px
       .hot-search
