@@ -7,19 +7,8 @@
       </div>
     </div>
     <div class="categoryContainer">
-      <ul class="categoryNav">
-        <li class="categoryItem active" >推荐专区</li>
-        <li class="categoryItem " >夏凉专区</li>
-        <li class="categoryItem " >爆品专区</li>
-        <li class="categoryItem " >推荐专区</li>
-        <li class="categoryItem " >推荐专区</li>
-        <li class="categoryItem " >推荐专区</li>
-        <li class="categoryItem " >推荐专区</li>
-        <li class="categoryItem " >推荐专区</li>
-        <li class="categoryItem " >推荐专区</li>
-        <li class="categoryItem " >推荐专区</li>
-        <li class="categoryItem " >推荐专区</li>
-        <li class="categoryItem " >推荐专区</li>
+      <ul class="categoryNav" >
+        <li class="categoryItem " :class="{active:currentIndex===index}" v-for="(category, index) in categorys" :key="index" @click='currentIndex=index'>{{category.name}}</li>
       </ul>
       <div class="categoryList">
         <div class="banner">
@@ -89,13 +78,29 @@
 </template>
 
 <script type="text/ecmascript-6">
+import {mapState} from 'vuex'
   export default {
+    data() {
+      return {
+        currentIndex:0
+      }
+    },
+    mounted() {
+      this.$store.dispatch('getCategory')
+    },
+    computed: {
+      ...mapState({
+        categorys: state=>state.category.categorys
+      })
+    },
   }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus"  scoped>
   .sortContainer
+    background white
     .header
+      background white
       padding 10px
       border-bottom 1px solid #eee
       .header_search
@@ -121,6 +126,7 @@
           margin-bottom 22px
           text-align center
           color #333
+          box-sizing border-box
           &.active
             color #ab2b2b
             border-left 3px solid #ab2b2b

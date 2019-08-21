@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
+import './mock/mock-server'
 import 'lib-flexible/flexible'
 
 Vue.config.productionTip = false
@@ -12,5 +14,6 @@ new Vue({
   el: '#app',
   components: { App },
   router,
-   template: '<App/>'
+  store,
+  template: '<App/>'
 })
