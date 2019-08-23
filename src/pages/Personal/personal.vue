@@ -56,17 +56,19 @@
       <form class="login-from">
         <div class="loginContent">
           <div class="inputItem">
-            <input type="text" placeholder="请输入手机号">
+            <input type="text" placeholder="请输入手机号" v-model="phone" name="phone" v-validate="'required|mobile'">
+            <span style="color: red;" v-show="errors.has('phone')">{{ errors.first('phone') }}</span>
           </div>
           <div class="inputItem">
-            <input type="text" placeholder="请输入短信验证码">
+            <input type="text" placeholder="请输入短信验证码" name="code" v-validate="{required:true,regex:/^\d{6}$/}">
+            <span style="color: red;" v-show="errors.has('code')">{{ errors.first('code') }}</span>
             <div class="code">获取验证码</div>
           </div>
           <div class="other-options">
             <span>遇到问题?</span>
             <span @click="showMail">使用密码验证登录</span>
           </div>
-          <div class="loginPhone">登录</div>
+          <div class="loginPhone" @click.prevent="login">登录</div>
           <div class="clause">
             <i class="iconfont icon-duigou1"></i>
             <span>我同意</span>
@@ -84,16 +86,18 @@
       <form class="login-from">
         <div class="loginContent">
           <div class="inputItem">
-            <input type="text" placeholder="邮箱账号">
+            <input type="text" placeholder="邮箱账号" name="邮箱" v-validate="{required:true,regex:/^([0-9A-Za-z\-_\.]+)@([0-9a-z]+\.[a-z]{2,3})$/g}">
+             <span style="color: red;">{{errors.first('邮箱')}}</span>
           </div>
           <div class="inputItem">
-            <input type="text" placeholder="密码">
+            <input type="text" placeholder="密码" name="密码" v-validate="{required:true}">
+            <span style="color: red;">{{errors.first('密码')}}</span>
           </div>
           <div class="other-options">
             <span>注册账号</span>
             <span>忘记密码</span>
           </div>
-          <div class="loginMail">登录</div>
+          <div class="loginMail" @click.prevent="login">登录</div>
         </div>
       </form>
     </div>
@@ -110,7 +114,8 @@
       return{
         isWrap:true,
         isPhone:false,
-        isMail:false
+        isMail:false,
+        phone:''
       }
     },
     methods:{
@@ -127,7 +132,21 @@
         this.isWrap=true
         this.isPhone=false
         this.isMail=false
-      }
+      },
+      async login () {
+        let names
+        const {isPhone} = this
+        if(isPhone) {
+          names = ['phone', 'code']
+        } else {
+          names = ['邮箱', '密码']
+        }
+
+        const success = await this.$validator.validateAll(names)
+        if(success) {
+          alert('表单验证通过, 发送登陆请求')
+        }
+      },
     }
   }
 </script>
@@ -225,6 +244,9 @@
             border-bottom 1px solid #c5cddb
             font-size 12px
             margin-bottom 10px
+            input
+              background #eee
+              outline none
             .code
               position absolute
               right 10px
@@ -280,6 +302,9 @@
             border-bottom 1px solid #c5cddb
             font-size 12px
             margin-bottom 10px
+            input
+              background #eee
+              outline none
           .other-options
             margin-top 20px
             font-size 14px

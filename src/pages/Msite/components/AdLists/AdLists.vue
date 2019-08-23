@@ -7,7 +7,7 @@
           <img :src="list.titlePicUrl" >
         </a>
       </div>
-      <div class="lists" ref="lists">
+      <div class="lists" ref="list">
         <ul class="proList ">
           <li class="listItem"  v-for="(item, index) in list.itemList" :key="index">
             <div class="ItemImg">
@@ -31,7 +31,7 @@
       mounted() {
           //let lists = document.querySelector('.lists')
 
-          let scrollPro = new BScroll(this.$refs.lists,{
+          let scrollPro = new BScroll("."+this.$refs.list,{
             scrollX: true,
             click: true
         })

@@ -6,6 +6,7 @@ import router from './router'
 import store from './store'
 import './mock/mock-server'
 import 'lib-flexible/flexible'
+import './validate'
 
 Vue.config.productionTip = false
 

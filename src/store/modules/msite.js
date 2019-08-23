@@ -45,6 +45,19 @@ const getters={
             return state.homeDate.newItemList
         }
     },
+    //品牌制造商 Brand 数据
+    getBrand(state){
+        if(state.homeDate.tagList){
+            return state.homeDate.tagList
+        }
+    },
+
+    //专题精选 
+    getSpecial(state){
+        if(state.homeDate.topicList){
+            return state.homeDate.topicList
+        }
+    },
     //获取AdLists 数据
     getAdLists(state){
         if(state.homeDate.categoryModule){

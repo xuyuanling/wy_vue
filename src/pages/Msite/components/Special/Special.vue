@@ -8,33 +8,16 @@
       </div>
       <div class="wrapper">
         <ul class="content">
-          <li class="contentItem" >
+          <li class="contentItem" v-for="(item, index) in getSpecial" :key="index">
             <div class="contentImg">
               <a href="javascript:">
-                <img src="/static/images/ad1.png" >
+                <img :src="item.itemPicUrl" >
               </a>
             </div>
-            <div class="title">直男们有救了！严选手把手教你, 送给女生的七夕怎么挑~</div>
-            <div class="desc">女士精选礼物大赏</div>
+            <div class="title">{{item.title}}</div>
+            <div class="desc">{{item.subtitle}}</div>
           </li>
-          <li class="contentItem" >
-            <div class="contentImg">
-              <a href="javascript:">
-                <img src="/static/images/ad2.png" >
-              </a>
-            </div>
-            <div class="title">直男们有救了！严选手把手教你, 送给女生的七夕怎么挑~</div>
-            <div class="desc">女士精选礼物大赏</div>
-          </li>
-          <li class="contentItem" >
-            <div class="contentImg">
-              <a href="javascript:">
-                <img src="/static/images/ad3.png" >
-              </a>
-            </div>
-            <div class="title">直男们有救了！严选手把手教你, 送给女生的七夕怎么挑~</div>
-            <div class="desc">女士精选礼物大赏</div>
-          </li>
+          
         </ul>
       </div>
     </div>
@@ -42,14 +25,22 @@
 
 <script type="text/ecmascript-6">
   import BScroll from 'better-scroll'
+  import {mapGetters} from 'vuex'
   export default {
       mounted() {
-          let wrapper = document.querySelector('.wrapper')
+        this.$store.dispatch('getHomeDate')
+        this.$nextTick(()=>{
+           let wrapper = document.querySelector('.wrapper')
             let scroll = new BScroll('.wrapper',{
                 scrollX: true,
                 click: true
+           })
         })
-    }
+         
+    },
+    computed: {
+      ...mapGetters(['getSpecial'])
+    },
   }
 </script>
 

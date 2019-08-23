@@ -42,6 +42,7 @@ import Category from '../Category/Category'
   .sortContainer
     background white
     padding-top 50px
+    overflow hidden
     .header
       position fixed
       left 0

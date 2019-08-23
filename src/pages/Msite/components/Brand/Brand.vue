@@ -7,28 +7,23 @@
         <i class="iconfont icon-jiantou"></i>
       </div>
       <ul class="BrandLise">
-        <li class="BrandItem">
-          <p>海外制造商</p>
-          <p>9.9元起</p>
-        </li>
-        <li class="BrandItem">
-          <p>海外制造商</p>
-          <p>9.9元起</p>
-        </li>
-        <li class="BrandItem">
-          <p>海外制造商</p>
-          <p>9.9元起</p>
-        </li>
-        <li class="BrandItem">
-          <p>海外制造商</p>
-          <p>9.9元起</p>
+        <li class="BrandItem" v-for="(item, index) in getBrand" :key="index" :style={background:item.picUrl}>
+          <p>{{item.name}}</p>
+          <p>{{item.floorPrice}}元起</p>
         </li>
       </ul>
     </div>
 </template>
 
 <script type="text/ecmascript-6">
+  import {mapGetters} from 'vuex'
   export default {
+    mounted() {
+      this.$store.dispatch('getHomeDate')
+    },
+    computed: {
+      ...mapGetters(['getBrand'])
+    },
   }
 </script>
 
